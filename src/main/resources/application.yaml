@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/physio_app?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 你的数据库密码 # 把这里换成你刚刚在Mac上装MySQL的密码
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
